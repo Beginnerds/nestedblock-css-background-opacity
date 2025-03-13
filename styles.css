@@ -34,5 +34,19 @@ p{
 
 .low-opacity-bg{
     background-image: url("/image.jpg");
+    position: relative;
+    isolation: isolate;
+}
+
+.low-opacity-bg::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background:pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
     opacity: 0.3;
 }
