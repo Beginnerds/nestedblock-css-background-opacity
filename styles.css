@@ -34,4 +34,5 @@ p{
 
 .low-opacity-bg{
     background-image: url("/image.jpg");
+    opacity: 0.3;
 }
