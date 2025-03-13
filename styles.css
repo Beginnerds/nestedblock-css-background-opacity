@@ -33,7 +33,8 @@ p{
 }
 
 .low-opacity-bg{
-    /* background-image: url("/image.jpg"); */
+    --bg-url: url("/image.jpg");
+    --bg-opacity: 0.7;
     position: relative;
     isolation: isolate;
 }
@@ -44,9 +45,9 @@ p{
     inset: 0;
     height: 100%;
     width: 100%;
-    background-image: url("/image.jpg");
+    background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    opacity: 0.7;
+    opacity: var(--bg-opacity);
 }
